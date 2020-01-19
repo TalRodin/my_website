@@ -1,0 +1,1 @@
+{"version":3,"file":"static/webpack/static/development/pages/index.js.2c60628b253f1ae585b3.hot-update.js","sources":["webpack:///./pages/index.js"],"sourcesContent":["const HomePage = () => {\n    return <div>Alyona Rodin</div>\n  }\n  \n  export default HomePage"],"mappings":";;;;;;;;;;;;;;;;;AAAA;AACA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACA;AACA;AACA;;;;A","sourceRoot":""}
