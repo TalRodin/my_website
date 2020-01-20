@@ -31,10 +31,6 @@ const HomePage = () => (
                 color:#424242;
                 font-weight: normal;
                }
-            //    .soc_media{
-            //     margin-top: -5%;
-                
-            // }
                 `}
             </style>
             </div>
