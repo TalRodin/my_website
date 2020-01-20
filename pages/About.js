@@ -162,8 +162,6 @@ const About = () =>(
         <style jsx>{
             `
             .navigation-area{
-                display: flex;
-                flex-direction: column;
                 width: 80%;
                 padding: 50px 0;
                 margin: 50px auto;
@@ -199,16 +197,20 @@ const About = () =>(
             }
             .step{
                 display: inline-block;
-                margin-left: -2%;
+                margin-left: -20px;
                 border-radius: 50%;
-                transition: background 0.5s ease;
+                
                 z-index: 9999;
                 width: 5px;
                 height: 5px;
                 border: 1px solid rgb(239, 239, 239);
                 background: rgb(239, 239, 239);
                 margin-top: 15px;
-                position:absoulute;
+                
+            }
+            .step:hover{
+                background:#616161;
+                font-weight: bold;
             }
             .label{
                 font-size: 14px;
@@ -218,11 +220,15 @@ const About = () =>(
                 font-family: 'Lato', sans-serif;
                 width: 95%;
                 padding: 0 15px;
-  
+            }
+            .label:hover{
+                color:#616161;
+                font-weight: bold;
             }
          `
         }
         </style>
+
         </div>
     </Layout>
 )
