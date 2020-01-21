@@ -10799,7 +10799,7 @@ var About = function About() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!***********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Falyonarodin%2FDesktop%2Fwebsite%2Fpages%2Fabout.js ***!
   \***********************************************************************************************************************************/
@@ -10822,5 +10822,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=about.js.map

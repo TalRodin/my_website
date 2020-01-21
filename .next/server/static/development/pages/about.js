@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2821,7 +2821,7 @@ const About = () => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["defau
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/
