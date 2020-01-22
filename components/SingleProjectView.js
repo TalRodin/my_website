@@ -2,19 +2,12 @@ import Link from 'next/link';
 const SingleProjectView = (data)=>{
     return (
        <div >
-           
+           <div className='imgs'>
+           <img src={data.data.image} width={200} height={180}/>
+           </div>
            <h4 key={data.data.id}><span>{data.data.title}</span></h4>
-           <h6 className="date-time">{data.data.date} · {data.data.time} read</h6>
-           <ul className="keywords">
-           {data.data.keyWords.split(', ').map((word,i)=>(
-              <li key={word[i]}>
-                  - {word}
-              </li> 
-           ))}
-           
-           </ul>
-           <h6 ><a href={`articles/${data.data.article}`}>Read more on Medium </a></h6>
-
+           <h5 key={data.data.id}>{data.data.technologies}</h5>
+           <h6 ><a href={`projects/${data.data.project_github_link}`}>Github</a></h6>
         <style jsx>
         {`h4{
                 letter-spacing: 1px;
@@ -34,7 +27,7 @@ const SingleProjectView = (data)=>{
             font-size: small;
             list-style: none;
          }
-         .date-time{
+         h5{
             letter-spacing: 1px;
             font-family: 'Lato', sans-serif;
             color: #bdbdbd;
@@ -52,6 +45,10 @@ const SingleProjectView = (data)=>{
          }
          h6{
             padding-bottom: 4%;
+         }
+         img{
+             margin:10px;
+             border-radius:10px;
          }
 
             `}
