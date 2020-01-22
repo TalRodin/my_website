@@ -53,6 +53,7 @@ const SingleArticleView = (data)=>{
          h6{
             padding-bottom: 4%;
          }
+
             `}
         </style>
        </div>

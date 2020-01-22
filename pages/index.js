@@ -3,8 +3,9 @@ import Layout from '../components/Layout';
 const HomePage = () => (
         <Layout>
             <div className ='background_body'>
-            <div>
-                <h1>Alyona Rodin</h1> 
+                <div>
+                <h1>Alyona Rodin</h1>
+                
             </div>
             <style jsx>
             {`.background_body{
@@ -26,7 +27,7 @@ const HomePage = () => (
                 margin-right: -50%;
                 transform: translate(-50%, -50%) }
                 text-transform: uppercase;
-                letter-spacing: 2px;
+                letter-spacing: 18px;
                 font-family: 'Lato', sans-serif;
                 color:#424242;
                 font-weight: normal;

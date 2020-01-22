@@ -147,13 +147,13 @@ const About = () =>(
                 <ul className="category">
                     <li className="li_category">
                         <a>
-                            <span className='step'></span>
+                            <div className='step'></div>
                             <span className="label">Snowboarding, Swimming</span>
                         </a>
                     </li>
                     <li className="li_category">
                         <a>
-                            <span className='step'></span>
+                            <div className='step'></div>
                             <span className="label">Painting, Fine Art</span>
                         </a>
                     </li>
@@ -206,7 +206,6 @@ const About = () =>(
                 border: 1px solid rgb(239, 239, 239);
                 background: rgb(239, 239, 239);
                 margin-top: 15px;
-                
             }
             .step:hover{
                 background:#616161;
@@ -225,6 +224,7 @@ const About = () =>(
                 color:#616161;
                 font-weight: bold;
             }
+
          `
         }
         </style>

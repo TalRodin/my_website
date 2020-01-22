@@ -7,7 +7,7 @@ const arrayOfArticls = [
         id: 1,
         article: 'red_art_one',
         title: "Build React Project from Scratch",
-        keyWords: "React, Webpack",
+        keyWords: "React, Webpack, Babel, Development and Production environment",
         date: 'Nov 3, 2019',
         time: '9 min'
     },
@@ -15,7 +15,7 @@ const arrayOfArticls = [
         id: 2,
         article: 'red_art_two',
         title: "Create Database and Normalize it",
-        keyWords: "ER Diagram, Database, Normalization",
+        keyWords: "Entity Relationship (ER) Diagram, Database, Normalization, Relational Model",
         date: 'Nov 12, 2019',
         time: '9 min'
     }
