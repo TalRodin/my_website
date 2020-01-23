@@ -7,7 +7,8 @@ const SingleProjectView = (data)=>{
            </div>
            <h4 key={data.data.id}><span>{data.data.title}</span></h4>
            <h5 key={data.data.id}>{data.data.technologies}</h5>
-           <h6 ><a href={`projects/${data.data.project_github_link}`}>Github</a></h6>
+           <a href={`projects/${data.data.project_github_link}`}><img src={`/github-brand-logo-47401.png`} width={30} height={30}/></a>
+           <a href={`projects/${data.data.project_github_link}`}><img src={`/youtube-brand-logo-47403.png`} width={30} height={30}/></a>
         <style jsx>
         {`h4{
                 letter-spacing: 1px;
@@ -45,6 +46,7 @@ const SingleProjectView = (data)=>{
          }
          h6{
             padding-bottom: 4%;
+            
          }
          img{
              margin:10px;

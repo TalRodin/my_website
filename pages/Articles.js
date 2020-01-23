@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import SingleArticleView from '../components/SingleArticleView'
+import {loadFirebase} from '../lib/db'
 
 const arrayOfArticls = [
     {
@@ -20,12 +21,42 @@ const arrayOfArticls = [
         time: '9 min'
     }
 ]
-const Articles = () =>(
-    <Layout>
-        <div className='background_body'>
+// const Articles = () =>(
+class Articles extends React.Component{
+    static async getInitialProps(){
+        let firebase=await loadFirebase()
+
+        let result = await new Promise((resolve, reject)=>{
+            firebase.firestore().collection('articles')
+                     .get()
+                     .then(snapshot=>{
+                        console.log(snapshot)
+                        let data = []
+                        snapshot.forEach(doc=>{
+                            
+                            data.push(Object.assign({
+                                id: doc.id
+                            }, doc.data()))
+                        })
+                        resolve(data)
+                     })
+                     .catch(function(error) {
+                        console.error("Error adding document: ", error);
+                    })
+                    })
+                    console.log(result)
+        return {articles: result}
+
+    }
+        render(){
+            console.log(this.props.articles)  
+    return (<Layout>
+        
+        <div className="background_body">
+           
             <h4>Articles</h4>
             <div>
-                {arrayOfArticls.map(art=>(
+                {this.props.articles.map(art=>(
                 <div key={art.id} className="box">
                     <SingleArticleView key={art.id} data={art}/>
                     
@@ -77,6 +108,7 @@ const Articles = () =>(
             `}
             </style>
         </div>
-    </Layout>
-)
+    </Layout>)
+}
+}
 export default Articles
