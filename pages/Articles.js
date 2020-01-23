@@ -52,14 +52,23 @@ const Articles = () =>(
                 margin-right: auto;
                 margin-top:50px;
                 margin-bottom:50px;
-                border-radius:4px;
+                border-radius:1rem;
                 width:50%;
                 height:auto;
-                background-color:#efeeee;
-                box-shadow: 6px 6px 16px rgb(209,205,199,0.5), -6px -6px 16px  rgba(255,255,255, 0.5);
+                background-color:#eee;
+                box-shadow:
+    -2.3px -2.3px 3.8px rgba(255,255,255, 0.2),
+  -6.3px -6.3px 10.6px rgba(255,255,255, 0.3),
+  -15.1px -15.1px 25.6px rgba(255,255,255, 0.4),
+  -50px -50px 85px rgba(0255,255,255, 0.07),
+  
+  2.3px 2.3px 3.8px rgba(0, 0, 0, 0.024),
+  6.3px 6.3px 10.6px rgba(0, 0, 0, 0.035),
+  15.1px 15.1px 25.6px rgba(0, 0, 0, 0.046),
+  50px 50px 85px rgba(0, 0, 0, 0.07);
             }
             .background_body{
-                background-color:#efeeee;
+                background-color:#eee;
                 background-size: 100px 100px;
                 background-position: 0 0, 50px 50px;
                 height: 1000px;

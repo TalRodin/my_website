@@ -5,7 +5,11 @@ const HomePage = () => (
             <div className ='background_body'>
                 <div>
                 <h1>Alyona Rodin</h1>
-                
+                <div className='social'>
+                <a href={`social_media/linkedin`}><img src={`/linkedin-brand-logo-47382.png`} width={30} height={30}/></a>
+                <a href={`social_media/github`}><img src={`/github-brand-logo-47401.png`} width={30} height={30}/></a>
+                <a href={`social_media/twitter`}><img src={`/twitter-brand-logo-47399.png`} width={30} height={30}/></a>
+                </div>
             </div>
             <style jsx>
             {`.background_body{
@@ -31,6 +35,19 @@ const HomePage = () => (
                 font-family: 'Lato', sans-serif;
                 color:#424242;
                 font-weight: normal;
+               }
+               a{
+                font-size: 13px;
+                color: #424242;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+                margin-right: 30px;
+                display: block;
+                text-align:right;
+               }
+               .social{
+                margin-top: 20%;
                }
                 `}
             </style>
