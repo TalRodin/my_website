@@ -6,8 +6,10 @@ const SingleArticleView = (data)=>{
            <h4 key={data.data.id}><span>{data.data.title}</span></h4>
            <h6 className="date-time">{data.data.date} · {data.data.time} read</h6>
            <ul className="keywords">
+           {console.log(data.data.keyWords.split(', '))}
            {data.data.keyWords.split(', ').map((word,i)=>(
-              <li key={word[i]}>
+              <li key={i}>
+                 
                   - {word}
               </li> 
            ))}

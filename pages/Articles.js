@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import Link from 'next/link';
 import SingleArticleView from '../components/SingleArticleView'
 import {loadFirebase} from '../lib/db'
+import 'isomorphic-fetch'
 
 const arrayOfArticls = [
     {
