@@ -50,7 +50,7 @@ class Articles extends React.Component{
 
     }
         render(){
-            console.log(this.props.articles)  
+            console.log(this.props)  
     return (<Layout>
         
         <div className="background_body">

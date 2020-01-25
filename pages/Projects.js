@@ -1,6 +1,8 @@
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import SingleProjectView from '../components/SingleProjectView'
+import {loadFirebase} from '../lib/db'
+import 'isomorphic-fetch'
 
 const arrayOfProjects = [
     {
@@ -53,15 +55,41 @@ const arrayOfProjects = [
     }
 
 ]
-const Projects = () =>(
-    
-    <Layout>
+// const Projects = () =>(
+class Projects extends React.Component{  
+    static async getInitialProps(){
+        let firebase = await loadFirebase()
+        console.log(firebase)
+        let result = await new Promise((resolve, reject)=>{
+            firebase.firestore().collection('projects')
+                    .get()
+                    .then(snapshot=>{
+                        let data=[]
+                        snapshot.forEach(doc=>{
+                            data.push(Object.assign({
+                                id:doc.id
+                            }, doc.data()))
+                        })
+                        resolve(data)
+                    })
+                    .catch(function(error){
+                        console.error("Error adding document: ", error);
+                    })
+        })
+        return {projects: result}
+
+    }
+
+
+    render(){
+        console.log(this)
+    return (<Layout>
        
         <div className='background_body'>
             <h4>Projects</h4>
             <div className='row'>
             
-                {arrayOfProjects.map(project=>(
+                {this.props.projects.map(project=>(
                     
                 <div key={project.id} className="box">
                     <SingleProjectView key={project.id} data={project}/>
@@ -130,4 +158,5 @@ const Projects = () =>(
         </div>
     </Layout>
 )
+} }
 export default Projects
