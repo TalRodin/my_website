@@ -10320,7 +10320,7 @@ var Projects = function Projects() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 1:
 /*!*****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fprojects&absolutePagePath=%2FUsers%2Falyonarodin%2FDesktop%2Fwebsite%2Fpages%2Fprojects.js ***!
   \*****************************************************************************************************************************************/
@@ -10343,5 +10343,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=projects.js.map

@@ -1,0 +1,46 @@
+{
+    "projects":{"project":[
+    {
+    "id": 1,
+    "project_github_link": "red_project_one",
+    "title": "Game of Life",
+    "image": "/game_of_life.png",
+    "technologies": "JavaScript, HTML, CSS"
+ },
+{
+    "id": 2,
+    "project_github_link": "red_project_two",
+    "title": "Weather App React",
+    "image": "/game_of_life.png",
+    "technologies": "React, API, CSS, HTML"
+ },
+{
+    "id": 3,
+    "project_github_link": "red_project_two",
+    "title": "Number game",
+    "image": "/game_of_life.png",
+    "technologies": "JavaScript, CSS, HTML"
+ },
+{
+    "id": 4,
+    "project_github_link": "red_project_one",
+    "title": "Game of Life",
+    "image": "/game_of_life.png",
+    "technologies": "JavaScript, HTML, CSS"
+ },
+{
+    "id": 5,
+    "project_github_link": "red_project_two",
+    "title": "Weather App React",
+    "image": "/game_of_life.png",
+    "technologies": "React, API, CSS, HTML"
+ },
+{
+    "id": 6,
+    "project_github_link": "red_project_two",
+    "title": "Number game",
+    "image": "/game_of_life.png",
+    "technologies": "JavaScript, CSS, HTML"
+ }]
+}
+}
