@@ -1,5 +1,5 @@
 import Layout from '../components/Layout';
-
+import Link from 'next/link';
 const HomePage = () => (
         <Layout>
             <div className ='background_body'>
@@ -10,7 +10,9 @@ const HomePage = () => (
                 <a href={`social_media/github`}><img src={`/github-brand-logo-47401.png`} width={30} height={30}/></a>
                 <a href={`social_media/twitter`}><img src={`/twitter-brand-logo-47399.png`} width={30} height={30}/></a>
                 </div>
+                
             </div>
+            <div className="arrow"><span><Link href='/contact'><img src={`arrow-down-sign-to-navigate.png`} width={20} height={20}/></Link></span></div>
             <style jsx>
             {`.background_body{
                     background-image: radial-gradient(#d7ccc8 2%, transparent 2%),
@@ -37,10 +39,6 @@ const HomePage = () => (
                 font-weight: normal;
                }
                a{
-                font-size: 13px;
-                color: #424242;
-                letter-spacing: 1px;
-                text-transform: uppercase;
                 margin-bottom: 5px;
                 margin-right: 30px;
                 display: block;
@@ -48,6 +46,12 @@ const HomePage = () => (
                }
                .social{
                 margin-top: 20%;
+               }
+               .arrow{
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                   
                }
                 `}
             </style>

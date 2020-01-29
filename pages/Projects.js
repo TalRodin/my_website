@@ -15,7 +15,7 @@ const arrayOfProjects = [
     },
     {
         id: 2,
-        project_github_link: 'red_project_two',
+        project_github_link: 'red_project_one',
         title: "Weather App React",
         image: '/game_of_life.png',
         technologies: "React, API, CSS, HTML",
@@ -23,7 +23,7 @@ const arrayOfProjects = [
     },
     {
         id: 3,
-        project_github_link: 'red_project_two',
+        project_github_link: 'red_project_one',
         title: "Number game",
         image: '/game_of_life.png',
         technologies: "JavaScript, CSS, HTML",
@@ -39,7 +39,7 @@ const arrayOfProjects = [
     },
     {
         id: 5,
-        project_github_link: 'red_project_two',
+        project_github_link: 'red_project_one',
         title: "Weather App React",
         image: '/game_of_life.png',
         technologies: "React, API, CSS, HTML",
@@ -47,7 +47,7 @@ const arrayOfProjects = [
     },
     {
         id: 6,
-        project_github_link: 'red_project_two',
+        project_github_link: 'red_project_one',
         title: "Number game",
         image: '/game_of_life.png',
         technologies: "JavaScript, CSS, HTML",

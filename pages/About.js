@@ -224,6 +224,7 @@ const About = () =>(
                 color:#616161;
                 font-weight: bold;
             }
+            
 
          `
         }
