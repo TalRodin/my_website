@@ -17,9 +17,9 @@ const HomePage = () => (
             {`.background_body{
                     background-image: radial-gradient(#d7ccc8 2%, transparent 2%),
                     radial-gradient(#d7ccc8 2%, transparent 2%);
-                    background-color: #fff;
                     background-position: 0 0, 50px 50px;
                     background-size: 100px 100px;
+                    margin-top:1%;
                     height: 650px;
                     width: 100%;
                     position: fixed;
@@ -31,12 +31,12 @@ const HomePage = () => (
                 top: 50%;
                 left: 50%;
                 margin-right: -50%;
-                transform: translate(-50%, -50%) }
+                transform: translate(-50%, -50%);
                 text-transform: uppercase;
-                letter-spacing: 18px;
-                font-family: 'Lato', sans-serif;
-                color:#424242;
+                letter-spacing: 20px;
                 font-weight: normal;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
                }
                a{
                 margin-bottom: 5px;
@@ -46,6 +46,7 @@ const HomePage = () => (
                }
                .social{
                 margin-top: 20%;
+                margin-right:2%;
                }
                .arrow{
                 position: absolute;

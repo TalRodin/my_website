@@ -92,12 +92,18 @@ class Articles extends React.Component{
     -2.3px -2.3px 3.8px rgba(255,255,255, 0.2),
   -6.3px -6.3px 10.6px rgba(255,255,255, 0.3),
   -15.1px -15.1px 25.6px rgba(255,255,255, 0.4),
-  -50px -50px 85px rgba(0255,255,255, 0.07),
+  -50px -50px 85px rgba(255,255,255, 0.07),
   
   2.3px 2.3px 3.8px rgba(0, 0, 0, 0.024),
   6.3px 6.3px 10.6px rgba(0, 0, 0, 0.035),
   15.1px 15.1px 25.6px rgba(0, 0, 0, 0.046),
   50px 50px 85px rgba(0, 0, 0, 0.07);
+            }
+            .box:hover{
+                background: linear-gradient(135deg, #f7f7f7, #f7f7f7);
+                    // background-color:#eee;
+                    transition: all .2s ease-in-out;
+                    box-shadow: inset 5px 5px 7px 5px rgba(0, 0, 0, 0.1), inset -5px -5px 7px 5px rgba(247, 251, 255, 0.6);
             }
             .background_body{
                 background-color:#eee;
