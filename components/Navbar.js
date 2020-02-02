@@ -12,15 +12,16 @@ const Navbar = () => (
             .menu {
                 text-transform: uppercase;
                 letter-spacing: 2px;
-                color: black;
+                // color: black;
                 display: inline-block;
                 cursor: pointer;
                 background:transparent;
                 // pointer-events: none;
-                bottom: 10px;
-                left: 20px; 
+                // bottom: 10px;
+                // left: 20px; 
                 font-family: 'Lato', sans-serif;
                 color:#424242;
+                position:fixed;
               }
             a{
                 font-family: 'Lato', sans-serif;

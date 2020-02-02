@@ -87,7 +87,7 @@ class Articles extends React.Component{
                 border-radius:1rem;
                 width:50%;
                 height:auto;
-                background-color:#eee;
+                // background-color:#eee;
                 box-shadow:
     -2.3px -2.3px 3.8px rgba(255,255,255, 0.2),
   -6.3px -6.3px 10.6px rgba(255,255,255, 0.3),
@@ -106,7 +106,7 @@ class Articles extends React.Component{
                     box-shadow: inset 5px 5px 7px 5px rgba(0, 0, 0, 0.1), inset -5px -5px 7px 5px rgba(247, 251, 255, 0.6);
             }
             .background_body{
-                background-color:#eee;
+                // background-color:#eee;
                 background-size: 100px 100px;
                 background-position: 0 0, 50px 50px;
                 height: 1000px;

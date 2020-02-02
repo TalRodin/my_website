@@ -123,7 +123,7 @@ class Projects extends React.Component{
                 border-radius:1rem;
                 width:90%;
                 height:auto;
-                background-color:#eee;
+                // background-color:#eee;
                 box-shadow:
     -2.3px -2.3px 3.8px rgba(255,255,255, 0.2),
   -6.3px -6.3px 10.6px rgba(255,255,255, 0.3),
@@ -136,7 +136,7 @@ class Projects extends React.Component{
   50px 50px 85px rgba(0, 0, 0, 0.07);
             }
             .background_body{
-                background-color:#efeeee;
+                // background-color:#efeeee;
                 background-size: 100px 100px;
                 background-position: 0 0, 50px 50px;
                 flex-wrap: wrap;
