@@ -93,6 +93,7 @@
 
 import Layout from '../components/Layout';
 import Link from 'next/link';
+import ArrowLink from '../components/ArrowLink'
 class HomePage extends React.Component{
   render(){
       return(
@@ -103,8 +104,8 @@ class HomePage extends React.Component{
         </div>  */}
                  
                  <h1>Alyona Rodin</h1>
-                
-                
+                 <ArrowLink />
+                 
         
               <style jsx>
                   {

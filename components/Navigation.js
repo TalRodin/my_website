@@ -1,4 +1,5 @@
 import {Link} from 'react-scroll'
+import ArrowLink from './ArrowLink'
 class Navigation extends React.Component{
     render(){
         return (
@@ -48,6 +49,10 @@ class Navigation extends React.Component{
                 <a href={`social_media/github`}><img src={`/github-brand-logo-47401.png`} width={30} height={30}/></a>
                 <a href={`social_media/twitter`}><img src={`/twitter-brand-logo-47399.png`} width={30} height={30}/></a>
                  </div>
+                 {/* <div>
+                 <div className="arrow"><span><L href='/contact'><img src={`icons8-up-down-arrow-80.png`} width={20} height={20}/></L></span></div>
+                 </div> */}
+                 
                 <style jsx>
                    {`
                        .navigation{
