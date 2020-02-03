@@ -229,7 +229,7 @@ const About = () =>(
                 font-weight: bold;
             }
             svg{
-                margin-top:10%;
+                margin-top:20%;
             }
             
 
