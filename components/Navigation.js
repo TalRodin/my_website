@@ -1,5 +1,6 @@
 import {Link} from 'react-scroll'
 import ArrowLink from './ArrowLink'
+import React from 'react'
 class Navigation extends React.Component{
     render(){
         return (
