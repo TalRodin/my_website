@@ -10,13 +10,23 @@ const SingleArticleView = (data) => {
                   <div className='point'></div>{word}
                </li>))}
             </ul>
+            <p>{data.data.description}</p>
             <h6 ><a href={`articles/${data.data.article}`}>Read more on Medium </a></h6>
+           
             <style jsx>
-            {`h4{
+            {`
+            
+            h4{
                letter-spacing: 1px;
                text-align: center;
                padding-top: 20px;
                margin-bottom: 5px;
+            }
+            p{
+               font-size: small;
+               text-align: justify;
+               margin-left:5.5%;
+               margin-right:50%;
             }
              .keywords{
                letter-spacing: 0px;
@@ -26,7 +36,7 @@ const SingleArticleView = (data) => {
             }
              .date-time{
                letter-spacing: 1px;
-               color: #bdbdbd;
+               color: #b8b5b8;
                text-align: center;
                padding: 0px;
                margin-top: 0px;
@@ -37,7 +47,7 @@ const SingleArticleView = (data) => {
               font-family: 'Lato', sans-serif;
               padding-bottom: 15px;
               padding-left: 37px;
-              color: #bdbdbd;
+              color: #f7a1a2;
             }
              h6{
               padding-bottom: 4%;

@@ -117,8 +117,8 @@ class HomePage extends React.Component{
                       margin-left: auto;
                       margin-right: auto}
                       .background_body{
-                                            background-image: radial-gradient(#d7ccc8 2%, transparent 2%),
-                                            radial-gradient(#d7ccc8 2%, transparent 2%);
+                                            background-image: radial-gradient(#b8b5b8 2%, transparent 2%),
+                                            radial-gradient(#b8b5b8 2%, transparent 2%);
                                             background-position: 0 0, 50px 50px;
                                             background-size: 100px 100px;
                                             margin-top:1%;

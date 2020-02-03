@@ -22,7 +22,7 @@ const SingleProjectView = (data)=>{
          .keywords {
             letter-spacing: 1px;
             font-family: 'Lato', sans-serif;
-            color:#424242;
+            color:#e8e7e8;
             text-align: justify;
             
             font-size: small;
