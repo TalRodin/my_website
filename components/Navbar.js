@@ -18,7 +18,7 @@ const Navbar = () => (
                 background:transparent;
                 // pointer-events: none;
                 // bottom: 10px;
-                // left: 20px; 
+                left: 30px; 
                 font-family: 'Lato', sans-serif;
                 color:#424242;
                 position:fixed;
