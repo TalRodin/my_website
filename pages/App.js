@@ -100,11 +100,11 @@ class HomePage extends React.Component{
                    
                  <div>
                  <h1>Alyona Rodin</h1>
-                 {/* <div className='social'>
-                 <a href={`social_media/linkedin`}><img src={`/linkedin-brand-logo-47382.png`} width={30} height={30}/></a>
-                 <a href={`social_media/github`}><img src={`/github-brand-logo-47401.png`} width={30} height={30}/></a>
-                 <a href={`social_media/twitter`}><img src={`/twitter-brand-logo-47399.png`} width={30} height={30}/></a>
-                 </div> */}
+                 <div className='social'>
+                 {/* <a href={`social_media/linkedin`}><img src={`/linkedin-brand-logo-47382.png`} width={10} height={10}/></a> */}
+                 {/* <a href={`social_media/github`}><img src={`/github-brand-logo-47401.png`} width={30} height={30}/></a>
+                 <a href={`social_media/twitter`}><img src={`/twitter-brand-logo-47399.png`} width={30} height={30}/></a> */}
+                 </div>
                 </div>
         
               <style jsx>
@@ -142,6 +142,16 @@ class HomePage extends React.Component{
                           font-size: 1.5rem;
                           line-height: 1.5rem;
                       }
+                      a{
+                        // margin-bottom: 5px;
+                        // margin-right: 30px;
+                        // display: block;
+                        // text-align:right;
+                        }
+                      .social{
+                        // margin-top: 20%;
+                        // margin-right:2%;
+                        }                
 
                       `
                   }
