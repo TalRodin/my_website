@@ -181,77 +181,51 @@ class Contact extends React.Component{
     render(){
         return(
             <div id='contact'>
-                <div className="background_body" id='contact'>
-             <div  className="col-left">
+                
                  <h4>Contact Information</h4>
+                 
                  <ul>
                      <li>
-                     Email: alyona.rodin@gmail.com 
+                         Email: alyona.rodin@gmail.com
                      </li>
                      <li>
-                     Phone Number: 9174639527
+                         Phone: 9174639527
                      </li>
-                     </ul>
-                 {/* <div className ='course'>
-                     <ul className='category'>
-                         <li>
-                            <a>
-                                <span className='step'></span>
-                               <span className='label'>Email: alyona.rodin@gmail.com</span>
-                             </a>
-                         </li>
-                         <li>
-                             <a>
-                                 <span className='step'></span>
-                                <span  className='label'>Phone Number: 9174639527</span>
-                             </a>
-                         </li>
-                     </ul>
-              
-                 </div> */}
-             </div>
-             <div className='big-box'>
-                 <h4>Send Message</h4>
-          
-                 {/* <div className="box">
-                         <h5>Your Name</h5>
-                 </div>
-              
-                 <div className="box">
-                         <h3>Email address</h3>
-                 </div>
-                 <div  className="box">
-                     <h3>Your Message...</h3>
-                     <br/>
-                     <br/>
-                     <br/>
-                     <br/>
-                     <br/>
-                     <br/>
-                 </div> */}
-            </div>
-            </div>
+                     
+                 </ul>
+                 
                 <style jsx>
                    {
                        `
-                       *{height:100vh;
-                        width: 50%;
+                     height:60vh;
                         background-color: f7f7f7;
                         display: block;
                         margin-left: auto;
                         margin-right: auto
+                    
+                    h4{
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-family: 'Lato', sans-serif;
+                        color:#424242;
+                        // margin-top:50%;
+                        // margin-right 50%;
+                        text-align: center;
+                        padding: 10%;
                     }
-                                   h4{
-                                        text-transform: uppercase;
-                                        letter-spacing: 2px;
-                                        font-family: 'Lato', sans-serif;
-                                        color:#424242;
-                                        margin-top:50%;
-                                        // margin-right 50%;
-                                        text-align: right;
-                                        padding: 10%;
-                                    }
-                       `
+                    ul{
+                        margin-top:-35%;
+                        margin-left:20%;
+                        position: absolute;
+                        // display: block;
+                        
+                
+                    }
+                    li{
+                        margin-bottom: -190%;
+                    }
+                    `
+                    
                    }
                </style>
             </div>
