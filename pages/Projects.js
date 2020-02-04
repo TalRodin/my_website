@@ -3,7 +3,7 @@ import Link from 'next/link';
 import SingleProjectView from '../components/SingleProjectView'
 import {loadFirebase} from '../lib/db'
 import 'isomorphic-fetch'
-
+import React from 'react'
 const arrayOfProjects = [
     {
         id: 1,

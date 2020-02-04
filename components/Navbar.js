@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import React from 'react'
 const Navbar = () => (
     <div className="menu">
         <div className="label">Menu</div>

@@ -3,7 +3,7 @@ const SingleProjectView = (data)=>{
     return (
        <div >
            <div className='imgs'>
-           <img src={data.data.image} width={200} height={180}/>
+           <img src={data.data.image} width={230} height={180}/>
            </div>
            <h4 key={data.data.id}><span>{data.data.title}</span></h4>
            <h5 key={data.data.id}>{data.data.technologies}</h5>
@@ -50,7 +50,8 @@ const SingleProjectView = (data)=>{
          }
          img{
              margin:10px;
-             border-radius:10px;
+             margin-top:30px;
+             border-radius:1rem;
          }
 
             `}
