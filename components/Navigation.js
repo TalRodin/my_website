@@ -2,13 +2,14 @@ import {Link} from 'react-scroll'
 import ArrowLink from './ArrowLink'
 import React from 'react'
 class Navigation extends React.Component{
+    
     render(){
+        
         return (
             <div>
             <div className="navigation">
                 <ul>
                     <li>
-                       
                         <Link activeClass="active"
                             to="home"
                             spy={true}
@@ -21,7 +22,7 @@ class Navigation extends React.Component{
                             onSetActive={this.handleSetActive}
                             onSetInactive={this.handleSetInactive}
                             ignoreCancelEvents={false}
-                        > Home
+                        ><a>Home</a>
                         </Link>
                       
                     </li>
@@ -39,7 +40,7 @@ class Navigation extends React.Component{
                             onSetActive={this.handleSetActive}
                             onSetInactive={this.handleSetInactive}
                             ignoreCancelEvents={false}
-                        > Contact
+                        ><a>Contact</a>
                         </Link>
                        
                     </li>
@@ -67,24 +68,24 @@ class Navigation extends React.Component{
                         list-style: none;
                        }
                        .navigation ul li{
-                           padding-left: 5px;
+                           padding-left: -3px;
                            position:relative
                        }
                        .navigation ul li {
                            text-decoration:none;
                            text-transform: uppercase;
                            color:#424242;
-                        //    position:relative
-                           font-size: 0.5rem;
-                           line-height: 1.5rem;
+                           position:relative;
+                           font-size: 0.6rem;
+                           line-height: 1.6rem;
                            cursor:pointer;
                        }
 
-                       .navigation ul li:before{
+                       .navigation ul li a:before{
                            content: '';
                            position: absolute;
-                           width: 8px;
-                           height: 8px;
+                           width: 6px;
+                           height: 6px;
                            left:-15px;
                            top:12px;
                            transform: translateY(-50%);
@@ -97,7 +98,7 @@ class Navigation extends React.Component{
                        a{
                         margin-bottom: 5px;
                         margin-right: 10px;
-                        display: block;
+                        // display: block;
                         text-align:right;
 
                         }

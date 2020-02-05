@@ -3,7 +3,7 @@ import React from 'react'
 const ArrowLink = () =>{
     return (
         <div className="arrow">
-            <Link href='/#contact'><img src={`icons8-up-down-arrow-80.png`} width={30} height={30}/></Link>
+            <Link  href='/#contact'><img src={`icons8-up-down-arrow-80.png`} width={30} height={30}/></Link>
         <style jsx>
            {`
             position:absolute;
