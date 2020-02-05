@@ -5,11 +5,14 @@ const SingleProjectView = (data)=>{
            <div className='imgs'>
            <img src={data.data.image} width={230} height={180}/>
            </div>
-           <h4 key={data.data.id}><span>{data.data.title}</span></h4>
+           <h4 ><span>{data.data.title}</span></h4>
            <h5 key={data.data.id}>{data.data.technologies}</h5>
            <a href={`projects/${data.data.project_github_link}`}><img src={`/github-brand-logo-47401.png`} width={30} height={30}/></a>
            <a href={`projects/${data.data.project_github_link}`}><img src={`/youtube-brand-logo-47403.png`} width={30} height={30}/></a>
-        <style jsx>
+        
+           {/* <Link href={{pathname:`project?id=${data.data.id}`, query: { name: "Ruben" }}} ><a>{data.data.id}</a></Link> */}
+           <Link as={`/project/${data.data.id}/${data.data.title}`} href={`/project?id=${data.data.id}&title=${data.data.title}`} ><a>{data.data.id}</a></Link>
+           <style jsx>
         {`h4{
                 letter-spacing: 1px;
                 font-family: 'Lato', sans-serif;
@@ -53,7 +56,6 @@ const SingleProjectView = (data)=>{
              margin-top:30px;
              border-radius:1rem;
          }
-
             `}
         </style>
        </div>
