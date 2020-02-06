@@ -1,10 +1,15 @@
 import React from 'react'
 import { useRouter } from 'next/router';
-const Project =()=> {
+import { render } from 'react-dom';
+// class Project extends React.Component {
+const Project = () => { 
     
-    const router = useRouter();
-    const { id, title } = router.query
-    console.log('----',title)
+    // static getInitialProps({ query }) {
+    //     return { id: query.id }
+    //   }
+    // render(){
+        const router = useRouter();
+        const { id, title } = router.query
         return(
             <div>
       <h1>{title}</h1>
@@ -13,12 +18,7 @@ const Project =()=> {
     </div>
             
         )
-    
+    // }
 }
-// Project.getInitialProps = ({ query }) => {
-//     console.log(query)
-//     return {
-//         project: project[query.id]
-//       }
-//   }
+
 export default Project

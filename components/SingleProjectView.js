@@ -1,5 +1,7 @@
 import Link from 'next/link';
+
 const SingleProjectView = (data)=>{
+   console.log(data)
     return (
        <div >
            <div className='imgs'>
@@ -10,8 +12,9 @@ const SingleProjectView = (data)=>{
            <a href={`projects/${data.data.project_github_link}`}><img src={`/github-brand-logo-47401.png`} width={30} height={30}/></a>
            <a href={`projects/${data.data.project_github_link}`}><img src={`/youtube-brand-logo-47403.png`} width={30} height={30}/></a>
         
-           {/* <Link href={{pathname:`project?id=${data.data.id}`, query: { name: "Ruben" }}} ><a>{data.data.id}</a></Link> */}
            <Link as={`/project/${data.data.id}/${data.data.title}`} href={`/project?id=${data.data.id}&title=${data.data.title}`} ><a>{data.data.id}</a></Link>
+          
+           {/* <Link href={`/project?id=${data.data.id}`} as={`/project/${data.data.id}`}></Link> */}
            <style jsx>
         {`h4{
                 letter-spacing: 1px;
