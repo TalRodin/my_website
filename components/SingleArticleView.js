@@ -1,7 +1,10 @@
 import React from 'react';
 const SingleArticleView = (data) => {
+   
     return (
          <div>
+            <div className='picture-box'></div>
+            <img src={data.data.image} width={230} height={180}/>
             <h4 key = {data.data.id}><span>{data.data.title}</span></h4>
             <h6 className="date-time">{data.data.date} · {data.data.time} read</h6>
             <ul className="keywords">
@@ -63,6 +66,23 @@ const SingleArticleView = (data) => {
               background: linear-gradient(145deg, #dedede, #ffffff);
               box-shadow:  9px 9px 19px #e3e3e3, 
              -9px -9px 19px #ffffff;
+            }
+            img{
+               position: relative;
+               float: right;
+               top:60px;
+               right:70px;
+               border-radius: 60% 35% 60% 38% / 33% 23% 77% 67%  ; 
+            }
+            .picture-box{
+               position: absolute;
+               width: 250px;
+               height: 200px;
+               top:60px;
+               right:50px;
+               border:solid thin #e8e7e8;
+               float: right;
+               border-radius: 30% 70% 70% 30% / 30% 69% 31% 70% ;
             }
             `}
             </style>

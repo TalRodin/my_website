@@ -57,7 +57,8 @@ const SingleProjectView = (data)=>{
          img{
              margin:10px;
              margin-top:30px;
-             border-radius:1rem;
+             border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;
+             
          }
             `}
         </style>
