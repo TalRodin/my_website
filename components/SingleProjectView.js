@@ -4,6 +4,7 @@ const SingleProjectView = (data)=>{
    console.log(data)
     return (
        <div >
+          
            <div className='imgs'>
            <img src={data.data.image} width={230} height={180}/>
            </div>

@@ -3,6 +3,7 @@ const SingleArticleView = (data) => {
    
     return (
          <div>
+            
             <div className='picture-box'></div>
             <img src={data.data.image} width={230} height={180}/>
             <h4 key = {data.data.id}><span>{data.data.title}</span></h4>
@@ -77,13 +78,14 @@ const SingleArticleView = (data) => {
             .picture-box{
                position: absolute;
                width: 250px;
-               height: 200px;
-               top:60px;
-               right:50px;
-               border:solid thin #e8e7e8;
+               height: 240px;
+               top:30px;
+               right:38px;
+               border:solid thin #c2d7df;
                float: right;
                border-radius: 30% 70% 70% 30% / 30% 69% 31% 70% ;
             }
+           
             `}
             </style>
          </div>

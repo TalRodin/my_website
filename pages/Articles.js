@@ -29,7 +29,10 @@ class Articles extends React.Component{
     render(){
     return (
         <Layout>
+             
+           
             <div className="background_body">
+            <div className='back-box'></div>
             <div className='svg_wave'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e8e7e8" fillOpacity="0.5" d="M0,224L48,192C96,160,192,96,288,64C384,32,480,32,576,42.7C672,53,768,75,864,74.7C960,75,1056,53,1152,64C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>            </div> 
                 <h4>Articles</h4>
@@ -78,7 +81,16 @@ class Articles extends React.Component{
                     background-size: 100px 100px;
                     background-position: 0 0, 50px 50px;
                     }
-                   
+                    .back-box{
+                        position: absolute;
+                        width: 1050px;
+                        height: 1350px;
+                        top: 30px;
+                        right:-10px;
+                        border:solid thin #c2d7df;
+                        // float: inherit;
+                        border-radius: 30% 70% 70% 30% / 30% 69% 31% 70% ;
+                     }
                 `}
                 </style>
             </div>

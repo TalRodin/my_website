@@ -3,5 +3,6 @@
     "alias": "next-custom-query",
     "env": {
       "NODE_ENV": "production"
-    }
+    },
+    "routes": [{ "src": "/about", "dest": "/about.html" }]
   }
