@@ -22,7 +22,7 @@ class Navigation extends React.Component{
                             onSetActive={this.handleSetActive}
                             onSetInactive={this.handleSetInactive}
                             ignoreCancelEvents={false}
-                        ><a>Home</a>
+                        >Home
                         </Link>
                       
                     </li>
@@ -40,7 +40,7 @@ class Navigation extends React.Component{
                             onSetActive={this.handleSetActive}
                             onSetInactive={this.handleSetInactive}
                             ignoreCancelEvents={false}
-                        ><a>Contact</a>
+                        >Contact
                         </Link>
                        
                     </li>
